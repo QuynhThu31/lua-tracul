@@ -1,0 +1,279 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face
+{
+	font-family:bebas;
+	src:url("../BEBAS/SVN-BEBAS NEUE BOLD.TTF");
+}
+@font-face
+{
+	font-family:bebasbold;
+	src:url("../bebas/SVN-BEBAS NEUE BOLD.TTF");
+}
+@font-face
+{
+	font-family:averta;
+	src:url("../Averta/Averta-Regular.otf");
+}
+@font-face
+{
+	font-family:nexabook;
+	src:url("../NEXA font/Nexa-Book.ttf");
+}
+@font-face
+{
+	font-family:avertalight;
+	src:url("../averta/Averta-Light.otf");
+}
+@font-face
+{
+	font-family:averta;
+	src:url("");
+}
+
+.me
+* {
+	box-sizing: border-box;
+}
+
+body
+{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: bebas;
+	margin: 0 0 50px;
+}
+h1 
+{
+	font-family: bebasbold;
+	font-weight: bold;
+	color: #ffcc00;
+}
+h2{text-align: center;}
+p 
+{
+	font-family: averta;
+	font-size: 11pt;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+span {font-size: 12pt;font-family: averta;color: #4D4D4D;letter-spacing: 1pt;}
+a 
+{
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+	list-style: none
+}
+
+button 
+{
+	width: 150px;
+	border-radius: 20px;
+	border: 2px solid #ffcc00;
+	background-color: #FFFFFF;
+	color: #FfCC00;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+button:active {transform: scale(0.95);}
+button:focus {outline: none;}
+button.ghost
+{
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+form
+{
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+}
+.form-container input 
+{
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 80%;
+	font-family: averta;
+}
+.container 
+{
+	height: 450px;
+	width: 800px;
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	min-height: 480px;
+}
+.form-container 
+{
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.option 
+{height: 10%}
+
+footer 
+{
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+footer p {margin: 10px 0;}
+footer i {color: red;}
+footer a 
+{
+    color: #3c97bf;
+    text-decoration: none;
+}
+nu{height:100px;}
+
+
+
+
+/*main*/
+.menu ul li
+{
+	list-style: none;
+	line-height:110px
+}
+.menu ul li .fa
+{font-size: 20pt;}
+div.menu img:hover
+{visibility: hidden;}
+.navigator
+{visibility:visible;}
+div.navigator ul li
+{
+	list-style:none;
+	float:left;
+	line-height:105px;
+	font-family: bebas;
+	margin-right:22px;
+}
+div.navigator ul
+{margin:0;padding:0;}
+ul li a
+{
+	font-size:14pt;
+	text-decoration:none;
+	color:#161616;
+}
+ul li a:hover {color:#FFCC00;text-decoration:none;}
+.logo
+{line-height:100px;}
+.logo img
+{width:40%;}
+.blank
+{height:50px;}
+.sign
+{height:86px;}
+.sign ul li
+{
+	list-style:none;
+	text-align:right;
+	line-height:105px;
+	font-family:bebas;
+	visibility:visible;
+}
+.sign ul
+{margin-right: 25px;padding:0;}
+
+
+
+.bar
+{height:630px;visibility:visible;}
+div.bar div.icon img:hover
+{visibility: hidden;}
+.icon
+{height:150px;margin: auto 0}
+.icon ul li
+{list-style: none; margin: 10px 0 20px 0; width: 100%;}
+.icon ul li .fa
+{ color:#4d4d4d}
+.icon ul li :hover {color: #ffcc00}
+.step
+{height:376px;float: right;}
+.page
+{height:104px;font-family:nexabook;text-decoration:none;color:#161616;font-size:10pt;writing-mode:vertical-rl;letter-spacing:8px;}
+
+
+@media only screen and (max-width:768px)
+{
+	.span {letter-spacing: 0pt}
+	.container {width: 600px;height: 650px;box-shadow: 0 0px 0px;}
+	
+	.menu
+	{height:45px;padding-top:20px;}
+	.navigator
+	{height:45px;background-color:white;visibility:hidden;}
+	.logo
+	{height:45px;line-height:60px;}
+	.logo img
+	{width:30%;}
+	.blank
+	{height:45px;}
+	.sign
+	{height:45px;}
+	.sign ul li
+	{visibility:hidden;line-height:0;}
+	.sign ul
+	{margin-right:0px}
+	
+	
+	.bar
+	{height:225px;visibility:hidden;}
+	
+}
+
+
+
+@media only screen and (max-width:576px)
+{
+	.span {font-size: 5pt;}
+	
+	.menu
+	{height:45px;padding-top:20px;}
+	.navigator
+	{visibility:hidden;}
+	.logo
+	{line-height:60px;}
+	.logo img
+	{width:30%;}
+	.sign ul li
+	{visibility:hidden;}
+	
+	
+	.bar
+	{height:225px;visibility:hidden;}
+	
+}
